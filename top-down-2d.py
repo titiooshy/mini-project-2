@@ -6,7 +6,6 @@ import numpy as np
 my_data = pd.read_csv("scan.csv")
 
 # conversion to make the pan angle and distance to top-down view
-
 pan_radians = np.radians(my_data["Pan"])
 x_direction = my_data["Distance"] * np.sin(pan_radians)
 y_direction = my_data["Distance"] * np.cos(pan_radians)
